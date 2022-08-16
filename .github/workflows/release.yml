@@ -9,10 +9,6 @@ jobs:
     steps:
     - name: Checkout repo
       uses: actions/checkout@v2
-    - name: Build Docker image
-      run: docker build -t linux -f Dockerfile.linux .
-    - name: Create container
-      run: docker create --name linuxcontainer linux
     - name: Copy executable
       run: |
         for TOOL in genoStats pileupCaller vcf2eigenstrat; do
