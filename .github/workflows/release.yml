@@ -53,7 +53,7 @@ jobs:
       run: stack install
     - name: Update-release
     - name: Set extension to .exe on Windows
-      run: echo "::set-output name=EXT::.exe"
+      
       
       run: |
         for TOOL in genoStats pileupCaller vcf2eigenstrat; do
