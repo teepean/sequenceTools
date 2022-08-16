@@ -52,9 +52,6 @@ jobs:
     - name: Build
       run: stack install
     - name: Update-release
-    - name: Set extension to .exe on Windows
-      
-      
       run: |
         for TOOL in genoStats pileupCaller vcf2eigenstrat; do
           cp ~/.local/bin/$TOOL $TOOL-windows
